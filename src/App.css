@@ -1,0 +1,101 @@
+.App{
+  text-align: center;
+}
+.movie-color{
+  background-color: blanchedalmond;
+}
+.text-edit{
+  width: 900px;
+  margin-bottom: 30px;
+  height: 30px;
+}
+.lan{
+  border-radius: 9px;
+  margin-right: 2rem;
+  border-color: rgb(237, 223, 223) ;
+  color: brown;
+  
+}
+.movie-selection{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.movie{
+  
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.movie-poster{
+  margin-top: 3rem;
+  border-radius: 20px;
+  height: 300px;
+}
+.movie-title{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5remm;
+}
+.screen-selection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.screen-selection .screen{
+  margin:1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition:all 0.2;
+  padding: 1rem;
+}
+.screen-selection .screen:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.screen-selection .screen.selected{
+  background-color: #b0d0f1;
+  color:white;
+}
+.screen-selection .screen:not(.available){
+  background-color: #ccc;
+  color: #444;
+  cursor: not-allowed;
+}
+.screen-selection .screen-number{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.screen-selection .screen-time{
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+.screen-selection .screen-seats{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.screen-selection .screen-seats .seat{
+  
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px  0px  10px rgba(0,0,0,0.2) ;
+  cursor: pointer;
+  transition: all 0.2s;
+ 
+}
+.screen-selection .screen-seats .seat.selected{
+  background-color: #007bff;
+  color: white;
+}
+.screen-selection .screen-seats .seat:not(.available){
+  background-color: #ccc;
+  color:#444;
+  cursor: not-allowed;
+}
